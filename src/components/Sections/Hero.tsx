@@ -1,4 +1,4 @@
-import MotionAnimation from "./Core/MotionAnimation";
+import MotionAnimation from "../Core/MotionAnimation";
 
 const Hero = () => {
   

@@ -1,5 +1,5 @@
 import Nav from "./components/Navigation/Nav"
-import Hero from "./components/Hero"
+import Hero from "./components/Sections/Hero"
 
 function App() {
 
