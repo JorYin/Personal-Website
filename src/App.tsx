@@ -1,10 +1,12 @@
-import React from "react"
+import Nav from "./components/Navigation/Nav"
+import Hero from "./components/Hero"
 
 function App() {
 
   return (
-    <div>
-
+    <div className="bg-[#EDEDE9]">
+      <Nav />
+      <Hero />
     </div>
   )
 }
