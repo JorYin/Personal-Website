@@ -1,6 +1,5 @@
 import {useState, useEffect} from "react";
 import { motion } from "framer-motion";
-import DesktopNavAnimation from "../Animations/DesktopNavAnimation";
 
 const MobileNav = () => {
 
@@ -47,7 +46,7 @@ const MobileNav = () => {
         <div className="max-w-7xl mx-auto">
           <nav className="flex justify-between items-center mx-5">
             <div>
-              <h1 className="font-extrabold text-2xl">
+              <h1 className="font-League-Spartan font-extrabold text-2xl">
                 Jordan.Y
               </h1>
             </div>

@@ -14,16 +14,16 @@ const Card = ({ projectImg, title, about, github, website, technologies} : CardP
         <img className="rounded-t-lg" src={projectImg}/>
       </div>
       <div className="p-5">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight">
+        <h5 className="mb-2 text-2xl font-bold font-League-Spartan">
           {title}
         </h5>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+        <p className="mb-3 font-Libre-Baskerville font-normal text-gray-700 dark:text-gray-400">
           {about}
         </p>
       </div>
       <div className="p-5">
         {technologies?.map((elements) => (
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{elements}</span>
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-medium font-League-Spartan mr-2 mb-2">#{elements}</span>
         ))}
       </div>
     </div>

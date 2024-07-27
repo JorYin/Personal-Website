@@ -7,20 +7,20 @@ const Nav = () => {
         <div className="max-w-7xl mx-auto">
           <nav className="flex justify-between items-center mx-5">
             <div>
-              <h1 className="font-extrabold text-2xl">
+              <h1 className="font-League-Spartan font-bold text-2xl">
                 Jordan.Y
               </h1>
             </div>
             <div>
               <ul className="flex">
                 <li className="py-2 px-4">
-                  <a href="/#about" className="font-bold">About</a>
+                  <a href="/#about" className="font-League-Spartan font-medium">About</a>
                 </li>
                 <li className="ml-4 py-2 px-4">
-                  <a href="/#projects" className="font-bold">Projects</a>
+                  <a href="/#projects" className="font-League-Spartan font-medium">Projects</a>
                 </li>
                 <li className="ml-4 py-2 px-4">
-                  <a href="/#contact" className="font-bold">Contact</a>
+                  <a href="/#contact" className="font-League-Spartan font-medium">Contact</a>
                 </li>
               </ul>
             </div>

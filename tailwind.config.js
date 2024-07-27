@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "League-Spartan": ["League Spartan", "sans-serif"],
+        "Libre-Baskerville": ["Libre Baskerville", "serif"]
+      }
+
+    },
   },
   plugins: [],
 }
