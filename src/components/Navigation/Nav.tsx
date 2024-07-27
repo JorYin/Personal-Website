@@ -11,13 +11,13 @@ const Nav = () => {
             <div>
               <ul className="flex">
                 <li className="py-2 px-4">
-                  <a className="font-bold">About</a>
+                  <a href="/#about" className="font-bold">About</a>
                 </li>
                 <li className="ml-4 py-2 px-4">
-                  <a className="font-bold">Projects</a>
+                  <a href="/#projects" className="font-bold">Projects</a>
                 </li>
                 <li className="ml-4 py-2 px-4">
-                  <a className="font-bold">Contact</a>
+                  <a href="/#contact" className="font-bold">Contact</a>
                 </li>
               </ul>
             </div>

@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
 
 interface MotionAnimationProps {
-  children: React.ReactNode
+  children: React.ReactNode,
+  ClassName?: string,
 }
 
-const MotionAnimation = ({ children } : MotionAnimationProps) => {
+const MotionAnimation = ({ children, ClassName } : MotionAnimationProps) => {
   return(
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
@@ -14,6 +15,7 @@ const MotionAnimation = ({ children } : MotionAnimationProps) => {
         delay: 0.5,
         ease: [0, 0.71, 0.2, 1.01]
       }}
+      className={ClassName}
     >
       {children}
     </motion.div>
