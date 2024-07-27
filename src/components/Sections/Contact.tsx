@@ -1,4 +1,5 @@
 import SectionAnimations from "../Animations/SectionAnimations";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 const Contact = () => {
   
@@ -10,23 +11,29 @@ const Contact = () => {
           </SectionAnimations>
           <div className="mx-5 grid grid-cols-1 lg:grid-cols-2 gap-8 ">
             <div>
-              <h1 className="font-League-Spartan font-medium text-4xl">Email</h1>
-              <a>@something</a>
+              <h1 className="font-League-Spartan font-medium text-3xl md:text-5xl lg:text-6xl mb-5">Email</h1>
+              <a href="mailto:jordany@bu.edu" className="text-xl lg:text-3xl transition-all ease-in-out delay-100 hover:text-cyan-500">jordany@bu.edu</a>
             </div>
             <div className="flex flex-col">
               <div className="mb-10">
-                <h1 className="mb-5 font-League-Spartan font-medium text-4xl">Digital Spaces</h1>
+                <h1 className="mb-5 font-League-Spartan font-medium text-3xl md:text-5xl lg:text-6xl">Digital Spaces</h1>
                 <ul>
-                  <li>
-                    <a className="font-Libre-Baskerville">LinkedIn</a>
+                  <li className="flex items-center mb-2">
+                    <FaLinkedin className="w-8 h-8 mr-2"/>
+                    <a href="https://www.linkedin.com/in/j0rdanyin/" target="_blank" className="font-Libre-Baskerville text-xl transition-all ease-in-out delay-100 hover:text-cyan-500">
+                      LinkedIn
+                    </a>
                   </li>
-                  <li>
-                    <a className="font-Libre-Baskerville">GitHub</a>
+                  <li className="flex items-center">
+                    <FaGithub className="w-8 h-8 mr-2"/>
+                    <a href="https://github.com/JorYin" target="_blank" className="font-Libre-Baskerville text-xl transition-all ease-in-out delay-100 hover:text-cyan-500">
+                      Github
+                    </a>
                   </li>
                 </ul>
               </div>
               <div>
-                <h1 className="font-League-Spartan font-medium text-4xl">Location</h1>
+                <h1 className="font-League-Spartan font-medium text-3xl md:text-5xl lg:text-6xl">Location</h1>
               </div>
             </div>
           </div>

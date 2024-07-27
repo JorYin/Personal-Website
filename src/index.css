@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  outline: 1px solid #f00
-}
-
 html {
   scroll-behavior: smooth;
 }
