@@ -1,9 +1,7 @@
-import Grid from "../Core/Grid";
-
 const Contact = () => {
   
   return(
-      <section id="contact" className="w-full bg-slate-100 py-32">
+      <section id="contact" className="w-full bg-slate-100 py-64">
         <div className="max-w-7xl mx-auto">
           <h1 className="mx-5 mb-10 text-center text-5xl md:text-8xl lg:text-9xl font-bold">LETS GET IN TOUCH!</h1>
           <div className="mx-5 grid grid-cols-1 lg:grid-cols-2 gap-8 ">

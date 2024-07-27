@@ -1,8 +1,5 @@
-
-
 interface GridProps {
   children: React.ReactNode,
-
 }
 
 const Grid = ({ children } : GridProps) => {
