@@ -1,6 +1,7 @@
 import Grid from "../Core/Grid";
 import Card from "../Core/Card";
 import ProjectInfo from "../../utils/projectInfo"
+import SectionAnimations from "../Animations/SectionAnimations";
 
 
 const Projects = () => {
@@ -9,7 +10,9 @@ const Projects = () => {
     <section id="projects" className="w-full py-40">
       <div className="w-full max-w-7xl mx-auto">
         <div className="text-center mb-10 mx-5">
-          <h1 className="font-League-Spartan text-5xl md:text-8xl lg:text-9xl font-bold">PROJECTS</h1>
+          <SectionAnimations>
+            <h1 className="font-League-Spartan text-5xl md:text-8xl lg:text-9xl font-bold">PROJECTS</h1>
+          </SectionAnimations>
         </div>
         <Grid>
           {ProjectInfo.map((Projects) => (

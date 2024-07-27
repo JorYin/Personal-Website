@@ -17,14 +17,14 @@ const About = () => {
             className="w-full max-w-3xl rounded-3xl"
           />
         </div>
-        <SectionAnimations>
           <div className="text-left p-4 order-2 md:order-none">
             <h1 className="font-League-Spartan font-extrabold text-5xl">Who am I?</h1>
-            <p className="mt-4 font-Libre-Baskerville">        
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <SectionAnimations>
+              <p className="mt-4 font-Libre-Baskerville">        
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </SectionAnimations>
           </div>
-        </SectionAnimations>
       </div>
     </div>
   </section>
