@@ -1,4 +1,3 @@
-import React from "react";
 import Grid from "../Core/Grid";
 import Card from "../Core/Card";
 import ProjectInfo from "../../utils/projectInfo"
@@ -18,6 +17,7 @@ const Projects = () => {
               projectImg={Projects.projectImg}
               title={Projects.title}
               about={Projects.about}
+              technologies={Projects.technologies}
               github={Projects.github}
               website={Projects.website}
             />

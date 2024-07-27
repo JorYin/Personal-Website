@@ -1,6 +1,6 @@
 const Nav = () => {
   return(
-      <div className="w-full py-4">
+      <div className="w-full py-4 hidden lg:block">
         <div className="max-w-7xl mx-auto">
           <nav className="flex justify-between items-center mx-5">
             <div>

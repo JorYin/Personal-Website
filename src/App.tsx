@@ -1,4 +1,5 @@
 import Nav from "./components/Navigation/Nav"
+import MobileNav from "./components/Navigation/Mobile"
 import Hero from "./components/Sections/Hero"
 import About from "./components/Sections/About"
 import Projects from "./components/Sections/Projects"
@@ -9,6 +10,7 @@ function App() {
 
   return (
     <div className="bg-[#EDEDE9]">
+        <MobileNav />
         <Nav />
         <Hero />
         <About />
