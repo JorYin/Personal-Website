@@ -1,7 +1,7 @@
 import WildWood from "../assets/ProjectImg/WildWood.png"
 import ScreenWise from "../assets/ProjectImg/ScreenWise.png"
 
-export const boardMemberBiosInfo = [
+const ProjectInfo = [
   {
     id: "0",
     projectImg: WildWood,
@@ -19,3 +19,5 @@ export const boardMemberBiosInfo = [
     website: "",
   },
 ];
+
+export default ProjectInfo;

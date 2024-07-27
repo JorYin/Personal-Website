@@ -2,15 +2,23 @@ interface CardProps {
   projectImg: string,
   title:string,
   about: string,
-  github: string,
-  website: string,
+  github?: string,
+  website?: string,
 }
 
-const Card = ({  } : CardProps) => {
+const Card = ({ projectImg, title, about, github, website  } : CardProps) => {
   return(
-    <div className="max-w-sm rounded overflow-hidden shadow-lg">
+    <div className="w-full rounded overflow-hidden shadow-lg transition duration-500 hover:scale-105">
       <div>
-
+        <img className="rounded-t-lg" src={projectImg}/>
+      </div>
+      <div className="p-5">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight">
+          {title}
+        </h5>
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          {about}
+        </p>
       </div>
     </div>
   );
