@@ -1,11 +1,6 @@
 import {useState, useEffect} from "react";
 import { motion } from "framer-motion";
 
-const variants = {
-  open: { opacity: 1, x: 0 },
-  closed: { opacity: 0, x: "100%" },
-}
-
 const MobileNav = () => {
 
   const [showDropdown, setShowDropdown] = useState(false);
@@ -36,6 +31,14 @@ const MobileNav = () => {
     }
   }, [screenSize]);
 
+  useEffect(() => {
+    document.body.classList.toggle('overflow-hidden', showDropdown);
+
+    return () => {
+      document.body.classList.remove('overflow-hidden');
+    };
+  }, [showDropdown]);
+
 
   return(
     <>
@@ -57,32 +60,39 @@ const MobileNav = () => {
       </div>
       
       {showDropdown &&
-        <div className="fixed left-0 top-0 z-40 h-screen w-screen bg-slate-300">
-          <div className="fixed z-50 flex h-screen w-screen justify-end text-accent-200">
-            <div className=" m-2 pointer-events-auto relative z-20 flex max-w-lg flex-col justify-end overflow-hidden rounded-md bg-secondary-300 2xl:max-w-xl 3xl:max-w-3xl">
-              <motion.nav 
-                initial="closed"
-                animate={showDropdown ? "open" : "closed"}
-                variants={variants}
-                className="flex flex-col justify-start bg-slate-300 h-full max-w-2xl"
-              >
-                {showDropdown &&               
-                  <ul className="flex flex-col">
-                    <li className="py-2 px-4">
-                      <a href="/#about" onClick={Callback} className="font-bold">About</a>
-                    </li>
-                    <li className="py-2 px-4">
-                      <a href="/#projects" onClick={Callback} className="font-bold">Projects</a>
-                    </li>
-                    <li className="py-2 px-4">
-                      <a href="/#contact" onClick={Callback} className="font-bold">Contact</a>
-                    </li>
-                  </ul>
-                }
-              </motion.nav>
+      <>
+        <motion.div
+          initial={{opacity: 0}}
+          animate={{ opacity: 1}}
+          transition={{ ease: "easeOut", duration: 1 }}
+        >
+        <div className="fixed left-0 top-0 z-10 h-screen w-screen bg-black opacity-40" />
+        </motion.div>
+        <div className="fixed left-0 top-0 z-20 flex h-screen w-screen justify-end opacity-100">
+          <motion.div 
+              initial={ {opacity: 0, x: "100%"} }
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ ease: "easeOut", duration: 1 }}
+              className="relative z-30 flex flex-col justify-end overflow-hidden rounded-md h-screen w-screen max-w-xl bg-slate-300"
+            >
+            <div className="mt-32 flex flex-col justify-start h-full max-w-2xl">
+              {showDropdown &&               
+                <ul className="flex flex-col">
+                  <li className="py-2 px-4">
+                    <a href="/#about" onClick={Callback} className="font-bold">About</a>
+                  </li>
+                  <li className="py-2 px-4">
+                    <a href="/#projects" onClick={Callback} className="font-bold">Projects</a>
+                  </li>
+                  <li className="py-2 px-4">
+                    <a href="/#contact" onClick={Callback} className="font-bold">Contact</a>
+                  </li>
+                </ul>
+              }
             </div>
-          </div>
+          </motion.div>
         </div>
+      </>
       }
     </>
   )
