@@ -14,7 +14,7 @@ const SectionAnimations = ({ children, ClassName } : SectionAnimationsProps) => 
       }}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.05 }}
+      viewport={{ once: true, amount: 0 }}
       transition={{
         duration: 1,
         delay: 0.3,

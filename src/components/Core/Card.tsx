@@ -11,35 +11,35 @@ interface CardProps {
 
 const Card = ({ projectImg, title, about, github, website, technologies} : CardProps) => {
   return(
-    <div className="w-full rounded overflow-hidden shadow-lg transition duration-500 hover:scale-105 group">
+    <div className="w-full rounded overflow-hidden shadow-lg transition duration-500 hover:scale-105 group bg-main">
       <div className="relative">
         <img className="rounded-t-lg" src={projectImg}/>
         <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
           <div className="flex space-x-4">
             {github && (
               <a href={github} target="_blank">
-                <FaGithub className="text-white w-12 h-12" />
+                <FaGithub className="text-second-color w-12 h-12" />
               </a>
             )}
             {website && (
               <a href={website} target="_blank">
-                <FaLink className="text-white w-12 h-12" />
+                <FaLink className="text-second-color w-12 h-12" />
               </a>
             )}
           </div>
         </div>
       </div>
-      <div className="p-5">
+      <div className="p-5 text-main-color">
         <h5 className="mb-2 text-2xl font-bold font-League-Spartan">
           {title}
         </h5>
-        <p className="mb-3 font-Libre-Baskerville font-normal text-gray-700 dark:text-gray-400">
+        <p className="mb-3 font-Libre-Baskerville font-normal">
           {about}
         </p>
       </div>
       <div className="p-5">
         {technologies?.map((elements) => (
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-medium font-League-Spartan mr-2 mb-2">#{elements}</span>
+          <span className="inline-block bg-primary rounded-full px-3 py-1 text-sm font-medium font-League-Spartan mr-2 mb-2">#{elements}</span>
         ))}
       </div>
     </div>
