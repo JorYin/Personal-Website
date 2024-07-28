@@ -5,11 +5,14 @@ import About from "./components/Sections/About"
 import Projects from "./components/Sections/Projects"
 import Contact from "./components/Sections/Contact"
 import Footer from "./components/Navigation/Footer"
+import GrainOverlay from "./assets/SVG/Grain"
 
 function App() {
 
   return (
-    <div className="bg-main">
+    <div className="bg-main relative overflow-hidden">
+      <GrainOverlay />
+      <div>
         <MobileNav />
         <Nav />
         <Hero />
@@ -17,6 +20,7 @@ function App() {
         <Projects />
         <Contact />
         <Footer />
+      </div>
     </div>
   )
 }

@@ -44,7 +44,6 @@ const MobileNav = () => {
   return(
     <>
       <div className="w-full py-4 block lg:hidden text-main-color relative overflow-hidden">
-        <GrainOverlay />
         <div className="max-w-7xl mx-auto">
           <nav className="flex justify-between items-center mx-5">
             <div>
@@ -53,7 +52,6 @@ const MobileNav = () => {
               </h1>
             </div>
             <button onClick={Callback} className="z-[999] flex flex-col h-12 w-12 bg-slate-00 rounded-full justify-center items-center bg-[#dcdcd7] relative overflow-hidden">
-              <GrainOverlay />
               <span className={`h-0.5 w-6 my-1 rounded-full bg-primary transition ease transform duration-300 ${showDropdown ? "rotate-45 translate-y-2.5" : ""}`}></span>
               <span className={`h-0.5 w-6 my-1 rounded-full bg-primary transition ease transform duration-300 ${showDropdown ? "opacity-0" : "opacity-100"}`}></span>
               <span className={`h-0.5 w-6 my-1 rounded-full bg-primary transition ease transform duration-300 ${showDropdown ? "-rotate-45 -translate-y-2.5" : ""}`}></span>

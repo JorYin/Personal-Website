@@ -35,9 +35,11 @@ const Card = ({ projectImg, title, about, github, website, technologies} : CardP
         <h5 className="mb-2 text-2xl font-bold font-League-Spartan">
           {title}
         </h5>
-        <p className="mb-3 font-Libre-Baskerville font-normal">
-          {about}
-        </p>
+        <div className="mb-3 font-Libre-Baskerville font-normal">
+          <p>
+            {about}
+          </p>
+        </div>
       </div>
       <div className="p-5">
         {technologies?.map((elements) => (

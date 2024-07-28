@@ -1,12 +1,10 @@
 import DesktopNavAnimation from "../Animations/DesktopNavAnimation";
 import HoverUnderlineAnimation from "../Animations/HoverUnderline";
-import GrainOverlay from "../../assets/SVG/Grain";
 
 const Nav = () => {
   return(
     <DesktopNavAnimation>
       <div className="w-full py-4 hidden lg:block text-main-color relative overflow-hidden">
-        <GrainOverlay />
         <div className="max-w-7xl mx-auto">
           <nav className="flex justify-between items-center mx-5">
             <div>
