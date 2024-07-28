@@ -42,7 +42,7 @@ const MobileNav = () => {
 
   return(
     <>
-      <div className="w-full py-4 block lg:hidden ">
+      <div className="w-full py-4 block lg:hidden text-main-color">
         <div className="max-w-7xl mx-auto">
           <nav className="flex justify-between items-center mx-5">
             <div>
@@ -50,10 +50,10 @@ const MobileNav = () => {
                 Jordan.Y
               </h1>
             </div>
-            <button onClick={Callback} className="z-[999] flex flex-col h-12 w-12 bg-slate-00 rounded-full justify-center items-center">
-              <span className={`h-0.5 w-6 my-1 rounded-full bg-black transition ease transform duration-300 ${showDropdown ? "rotate-45 translate-y-2.5" : ""}`}></span>
-              <span className={`h-0.5 w-6 my-1 rounded-full bg-black transition ease transform duration-300 ${showDropdown ? "opacity-0" : "opacity-100"}`}></span>
-              <span className={`h-0.5 w-6 my-1 rounded-full bg-black transition ease transform duration-300 ${showDropdown ? "-rotate-45 -translate-y-2.5" : ""}`}></span>
+            <button onClick={Callback} className="z-[999] flex flex-col h-12 w-12 bg-slate-00 rounded-full justify-center items-center bg-[#dcdcd7]">
+              <span className={`h-0.5 w-6 my-1 rounded-full bg-primary transition ease transform duration-300 ${showDropdown ? "rotate-45 translate-y-2.5" : ""}`}></span>
+              <span className={`h-0.5 w-6 my-1 rounded-full bg-primary transition ease transform duration-300 ${showDropdown ? "opacity-0" : "opacity-100"}`}></span>
+              <span className={`h-0.5 w-6 my-1 rounded-full bg-primary transition ease transform duration-300 ${showDropdown ? "-rotate-45 -translate-y-2.5" : ""}`}></span>
             </button>
           </nav>
         </div>
@@ -79,19 +79,19 @@ const MobileNav = () => {
                 delay: 0.2,
                 ease: [0, 0.71, 0.2, 1.01]
               }}
-              className="relative z-30 flex flex-col justify-end overflow-hidden rounded-md h-screen w-screen max-w-sm bg-slate-300"
+              className="relative z-30 flex flex-col justify-end overflow-hidden rounded-md h-screen w-screen max-w-sm bg-primary"
             >
-            <div className="mt-32 flex flex-col justify-start h-full max-w-2xl">
+            <div className="mt-32 flex flex-col justify-start h-full max-w-2xl text-second-color">
               {showDropdown &&               
                 <ul className="flex flex-col">
-                  <li className="py-2 px-4">
-                    <a href="/#about" onClick={Callback} className="font-bold">About</a>
+                  <li className="py-2 px-16">
+                    <a href="/#about" onClick={Callback} className="font-League-Spartan font-medium text-5xl">ABOUT</a>
                   </li>
-                  <li className="py-2 px-4">
-                    <a href="/#projects" onClick={Callback} className="font-bold">Projects</a>
+                  <li className="py-2 px-16">
+                    <a href="/#projects" onClick={Callback} className="font-League-Spartan font-medium text-5xl">PROJECTS</a>
                   </li>
-                  <li className="py-2 px-4">
-                    <a href="/#contact" onClick={Callback} className="font-bold">Contact</a>
+                  <li className="py-2 px-16">
+                    <a href="/#contact" onClick={Callback} className="font-League-Spartan font-medium text-5xl">CONTACT</a>
                   </li>
                 </ul>
               }

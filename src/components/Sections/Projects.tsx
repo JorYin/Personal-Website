@@ -7,11 +7,11 @@ import SectionAnimations from "../Animations/SectionAnimations";
 const Projects = () => {
   
   return(
-    <section id="projects" className="w-full py-40">
+    <section id="projects" className="w-full py-40 text-second-color bg-primary rounded-b-[5rem]">
       <div className="w-full max-w-7xl mx-auto">
         <div className="text-center mb-10 mx-5">
           <SectionAnimations>
-            <h1 className="font-League-Spartan text-5xl md:text-8xl lg:text-9xl font-bold">PROJECTS</h1>
+            <h1 className="font-League-Spartan text-5xl sm:text-9xl font-bold">PROJECTS</h1>
           </SectionAnimations>
         </div>
         <Grid>

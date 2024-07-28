@@ -17,7 +17,7 @@ const SectionAnimations = ({ children, ClassName } : SectionAnimationsProps) => 
       viewport={{ once: true, amount: 0.05 }}
       transition={{
         duration: 1,
-        delay: 0.2,
+        delay: 0.3,
         ease: [0, 0.71, 0.2, 1.01]
       }}
       className={ClassName}

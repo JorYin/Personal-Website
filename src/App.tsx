@@ -9,7 +9,7 @@ import Footer from "./components/Navigation/Footer"
 function App() {
 
   return (
-    <div className="bg-[#EDEDE9]">
+    <div className="bg-main">
         <MobileNav />
         <Nav />
         <Hero />

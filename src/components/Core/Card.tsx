@@ -1,3 +1,5 @@
+import { FaGithub, FaLink } from "react-icons/fa6"
+
 interface CardProps {
   projectImg: string,
   title:string,
@@ -9,9 +11,23 @@ interface CardProps {
 
 const Card = ({ projectImg, title, about, github, website, technologies} : CardProps) => {
   return(
-    <div className="w-full rounded overflow-hidden shadow-lg transition duration-500 hover:scale-105">
-      <div>
+    <div className="w-full rounded overflow-hidden shadow-lg transition duration-500 hover:scale-105 group">
+      <div className="relative">
         <img className="rounded-t-lg" src={projectImg}/>
+        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+          <div className="flex space-x-4">
+            {github && (
+              <a href={github} target="_blank">
+                <FaGithub className="text-white w-12 h-12" />
+              </a>
+            )}
+            {website && (
+              <a href={website} target="_blank">
+                <FaLink className="text-white w-12 h-12" />
+              </a>
+            )}
+          </div>
+        </div>
       </div>
       <div className="p-5">
         <h5 className="mb-2 text-2xl font-bold font-League-Spartan">
