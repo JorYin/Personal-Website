@@ -1,10 +1,12 @@
 import SectionAnimations from "../Animations/SectionAnimations";
 import Me from "../../assets/me.webp"
+import GrainOverlay from "../../assets/SVG/Grain";
 
 const About = () => {
   
   return(
-  <section id="about" className="w-full py-32 text-second-color bg-primary rounded-t-2xl">
+  <section id="about" className="w-full py-32 text-second-color bg-primary rounded-t-2xl relative overflow-hidden">
+    <GrainOverlay />
     <div className="w-full max-w-7xl mx-auto">
       <SectionAnimations>
         <div className="text-center mb-10 mx-5">

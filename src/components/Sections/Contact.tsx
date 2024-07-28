@@ -2,11 +2,13 @@ import SectionAnimations from "../Animations/SectionAnimations";
 import HoverUnderlineAnimation from "../Animations/HoverUnderline";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import LocalTime from "../Core/LocalTime";
+import GrainOverlay from "../../assets/SVG/Grain";
 
 const Contact = () => {
   
   return(
-      <section id="contact" className="w-full py-64 text-main-color">
+      <section id="contact" className="w-full py-64 text-main-color relative overflow-hidden">
+        <GrainOverlay />
         <div className="max-w-7xl mx-auto">
           <SectionAnimations>
             <h1 className="mx-5 mb-10 text-center text-5xl sm:text-9xl font-bold font-League-Spartan">CONTACT</h1>

@@ -1,4 +1,5 @@
 import { FaGithub, FaLink } from "react-icons/fa6"
+import GrainOverlay from "../../assets/SVG/Grain"
 
 interface CardProps {
   projectImg: string,
@@ -11,7 +12,8 @@ interface CardProps {
 
 const Card = ({ projectImg, title, about, github, website, technologies} : CardProps) => {
   return(
-    <div className="w-full rounded overflow-hidden shadow-lg transition duration-500 hover:scale-105 group bg-main">
+    <div className="w-full rounded overflow-hidden shadow-lg transition duration-500 hover:scale-105 group bg-main relative">
+      <GrainOverlay />
       <div className="relative">
         <img className="rounded-t-lg" src={projectImg}/>
         <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">

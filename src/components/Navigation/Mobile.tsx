@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react";
 import { motion } from "framer-motion";
+import GrainOverlay from "../../assets/SVG/Grain";
 
 const MobileNav = () => {
 
@@ -50,7 +51,8 @@ const MobileNav = () => {
                 Jordan.Y
               </h1>
             </div>
-            <button onClick={Callback} className="z-[999] flex flex-col h-12 w-12 bg-slate-00 rounded-full justify-center items-center bg-[#dcdcd7]">
+            <button onClick={Callback} className="z-[999] flex flex-col h-12 w-12 bg-slate-00 rounded-full justify-center items-center bg-[#dcdcd7] relative overflow-hidden">
+              <GrainOverlay />
               <span className={`h-0.5 w-6 my-1 rounded-full bg-primary transition ease transform duration-300 ${showDropdown ? "rotate-45 translate-y-2.5" : ""}`}></span>
               <span className={`h-0.5 w-6 my-1 rounded-full bg-primary transition ease transform duration-300 ${showDropdown ? "opacity-0" : "opacity-100"}`}></span>
               <span className={`h-0.5 w-6 my-1 rounded-full bg-primary transition ease transform duration-300 ${showDropdown ? "-rotate-45 -translate-y-2.5" : ""}`}></span>
@@ -79,8 +81,9 @@ const MobileNav = () => {
                 delay: 0.2,
                 ease: [0, 0.71, 0.2, 1.01]
               }}
-              className="relative z-30 flex flex-col justify-end overflow-hidden rounded-md h-screen w-screen max-w-sm bg-primary"
+              className="relative z-30 flex flex-col justify-end overflow-hidden rounded-l-md h-screen w-screen max-w-sm bg-primary"
             >
+            <GrainOverlay />
             <div className="mt-32 flex flex-col justify-start h-full max-w-2xl text-second-color">
               {showDropdown &&               
                 <ul className="flex flex-col">
