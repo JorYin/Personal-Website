@@ -85,13 +85,13 @@ const MobileNav = () => {
               {showDropdown &&               
                 <ul className="flex flex-col">
                   <li className="py-2 px-16">
-                    <a href="/#about" onClick={Callback} className="font-League-Spartan font-medium text-5xl">ABOUT</a>
+                    <a href="/#about" onClick={Callback} className="font-League-Spartan font-medium text-5xl transition duration-500 hover:bg-accent">ABOUT</a>
                   </li>
                   <li className="py-2 px-16">
-                    <a href="/#projects" onClick={Callback} className="font-League-Spartan font-medium text-5xl">PROJECTS</a>
+                    <a href="/#projects" onClick={Callback} className="font-League-Spartan font-medium text-5xl transition duration-500 hover:bg-accent">PROJECTS</a>
                   </li>
                   <li className="py-2 px-16">
-                    <a href="/#contact" onClick={Callback} className="font-League-Spartan font-medium text-5xl">CONTACT</a>
+                    <a href="/#contact" onClick={Callback} className="font-League-Spartan font-medium text-5xl transition duration-500 hover:bg-accent">CONTACT</a>
                   </li>
                 </ul>
               }

@@ -7,7 +7,7 @@ import SectionAnimations from "../Animations/SectionAnimations";
 const Projects = () => {
   
   return(
-    <section id="projects" className="w-full py-40 text-second-color bg-primary rounded-b-[5rem]">
+    <section id="projects" className="w-full py-40 text-second-color bg-primary rounded-b-2xl">
       <div className="w-full max-w-7xl mx-auto">
         <div className="text-center mb-10 mx-5">
           <SectionAnimations>

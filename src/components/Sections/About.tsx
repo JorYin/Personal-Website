@@ -4,7 +4,7 @@ import Me from "../../assets/me.webp"
 const About = () => {
   
   return(
-  <section id="about" className="w-full py-32 text-second-color bg-primary rounded-t-[5rem]">
+  <section id="about" className="w-full py-32 text-second-color bg-primary rounded-t-2xl">
     <div className="w-full max-w-7xl mx-auto">
       <SectionAnimations>
         <div className="text-center mb-10 mx-5">
