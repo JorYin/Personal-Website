@@ -43,7 +43,8 @@ const MobileNav = () => {
 
   return(
     <>
-      <div className="w-full py-4 block lg:hidden text-main-color">
+      <div className="w-full py-4 block lg:hidden text-main-color relative overflow-hidden">
+        <GrainOverlay />
         <div className="max-w-7xl mx-auto">
           <nav className="flex justify-between items-center mx-5">
             <div>

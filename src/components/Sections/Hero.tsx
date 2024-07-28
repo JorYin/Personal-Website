@@ -4,7 +4,7 @@ import GrainOverlay from "../../assets/SVG/Grain";
 const Hero = () => {
   
   return(
-      <section id="hero" className="w-full py-32 lg:py-[14.1rem] flex justify-center items-center text-main-color overflow-hidden">
+      <section id="hero" className="w-full py-32 lg:py-[14.1rem] flex justify-center items-center text-main-color relative overflow-hidden">
         <GrainOverlay />
         <div className="max-w-7xl mx-auto mb-40">
           <TextMotionAnimation ClassName="text-center">
