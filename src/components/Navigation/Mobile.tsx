@@ -80,7 +80,7 @@ const MobileNav = () => {
                 delay: 0.2,
                 ease: [0, 0.71, 0.2, 1.01]
               }}
-              className="relative z-30 flex flex-col justify-end overflow-hidden rounded-l-md h-screen w-screen max-w-sm bg-primary"
+              className="relative z-30 flex flex-col justify-end overflow-hidden rounded-l-md h-screen w-screen max-w-sm bg-[#32344d]"
             >
             <GrainOverlay />
             <div className="mt-32 flex flex-col justify-start h-full max-w-2xl text-second-color">
