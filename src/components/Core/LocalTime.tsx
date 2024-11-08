@@ -16,7 +16,7 @@ const LocalTime = () => {
 
   return(
     <div className="">
-      <p className="font-Libre-Baskerville text-xl">{date.toLocaleTimeString()}</p>
+      <p className="font-Libre-Baskerville text-xl">{date.toLocaleTimeString('en-US', {timeZone: "America/Chicago"})}</p>
     </div>
   );
 };

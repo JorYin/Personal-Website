@@ -1,4 +1,3 @@
-import SectionAnimations from "../Animations/SectionAnimations";
 import Me from "../../assets/me.webp"
 import GrainOverlay from "../../assets/SVG/Grain";
 
@@ -8,11 +7,9 @@ const About = () => {
   <section id="about" className="w-full py-32 text-second-color bg-primary rounded-t-2xl relative overflow-hidden">
     <GrainOverlay />
     <div className="w-full max-w-7xl mx-auto">
-      <SectionAnimations>
         <div className="text-center mb-10 mx-5">
           <h1 className="font-League-Spartan text-5xl sm:text-9xl font-bold">ABOUT ME</h1>
         </div>
-      </SectionAnimations>
       <div className="relative grid grid-cols-1 md:grid-cols-2 gap-16 mx-5">
         <div className="order-1 md:order-none">
           <img 
@@ -22,7 +19,6 @@ const About = () => {
         </div>
           <div className="text-left p-4 order-2 md:order-none">
             <h1 className="font-League-Spartan font-extrabold text-4xl sm:text-5xl">Who am I?</h1>
-            <SectionAnimations>
               <p className="mt-4 font-Libre-Baskerville">        
               Hey, I am Jordan, a first-generation college student from a low-income background pursuing computer science at Boston University!
               <br></br>
@@ -31,11 +27,7 @@ const About = () => {
               <br></br>
               <br></br>
               Outside of coding, you'll find me at the gym, sketching ideas, enjoying time with friends, or filming videos!
-              <br></br>
-              <br></br>
-              Feel free to contact me; I'd love to connect!
               </p>
-            </SectionAnimations>
           </div>
       </div>
     </div>

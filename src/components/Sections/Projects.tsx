@@ -1,8 +1,8 @@
 import Grid from "../Core/Grid";
 import Card from "../Core/Card";
 import ProjectInfo from "../../utils/projectInfo"
-import SectionAnimations from "../Animations/SectionAnimations";
 import GrainOverlay from "../../assets/SVG/Grain";
+import { Link } from "react-router-dom";
 
 
 const Projects = () => {
@@ -12,10 +12,9 @@ const Projects = () => {
       <GrainOverlay />
       <div className="w-full max-w-7xl mx-auto">
         <div className="text-center mb-10 mx-5">
-          <SectionAnimations>
             <h1 className="font-League-Spartan text-5xl sm:text-9xl font-bold">PROJECTS</h1>
-          </SectionAnimations>
         </div>
+        <Link to="/ScreenWise"></Link>
         <Grid>
           {ProjectInfo.map((Projects) => (
           <div className="relative z-20">

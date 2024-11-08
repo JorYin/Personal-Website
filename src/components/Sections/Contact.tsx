@@ -1,4 +1,3 @@
-import SectionAnimations from "../Animations/SectionAnimations";
 import HoverUnderlineAnimation from "../Animations/HoverUnderline";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import LocalTime from "../Core/LocalTime";
@@ -9,9 +8,7 @@ const Contact = () => {
   return(
       <section id="contact" className="w-full py-64 text-main-color relative overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <SectionAnimations>
             <h1 className="mx-5 mb-10 text-center text-5xl sm:text-9xl font-bold font-League-Spartan">CONTACT</h1>
-          </SectionAnimations>
           <div className="mx-5 grid grid-cols-1 lg:grid-cols-3 gap-8 ">
             <div className="flex flex-col">
               <h1 className="font-League-Spartan font-medium text-3xl md:text-5xl lg:text-6xl mb-4">Contact Details</h1>
