@@ -14,6 +14,7 @@ const About = () => {
         <div className="order-1 md:order-none">
           <img 
             src={Me}
+            alt="picture of me"
             className="w-full max-w-3xl rounded-3xl"
           />
         </div>

@@ -37,7 +37,7 @@ const ProjectInfo = [
     title: "Game Of Life",
     about: "We took inspiration from The Game Of Life. This board game has players navigate through life, make decisions, earn money, and ultimately try to gain the most wealth by the end of the game. Wealth is measured in a variety of ways which affects your overall final score. We wanted a way to gamify learning financial literacy. There are some existing resources online but these sites can be a task to navigate, difficult to find, and hard to understand so the goal was to gamify learning to make it fun and motivating.",
     technologies: ["React", "Typescript", "Tailwind Css"],
-    demo: "https://devpost.com/software/game-of-life-z1lnau?ref_content=user-portfolio&ref_feature=in_progress",
+    demo: "https://gameof-life-9dec.vercel.app/",
     link: "/GameOfLife"
   },
 ];
