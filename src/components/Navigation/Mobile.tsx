@@ -63,24 +63,25 @@ const MobileNav = () => {
       {showDropdown &&
       <>
         <motion.div
-          initial={{opacity: 0}}
-          animate={{ opacity: 1}}
-          transition={{ 
-            ease: "easeOut", 
-            duration: 0.8 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.4 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="fixed left-0 top-0 z-10 h-screen w-screen bg-black"
         >
         <div className="fixed left-0 top-0 z-10 h-screen w-screen bg-black opacity-40" />
         </motion.div>
         <div className="fixed left-0 top-0 z-20 flex h-screen w-screen justify-end">
           <motion.div 
-              initial={ {opacity: 0, x: "100%"} }
-              animate={{ opacity: 1, x: 0 }}
-              transition={{
-                duration: 1,
-                delay: 0.2,
-                ease: [0, 0.71, 0.2, 1.01]
-              }}
-              className="relative z-30 flex flex-col justify-end overflow-hidden rounded-l-md h-screen w-screen max-w-sm bg-[#32344d]"
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{
+              duration: 0.8,
+              delay: 0.2,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className="relative z-30 flex flex-col justify-end overflow-hidden rounded-l-md h-screen w-screen max-w-sm bg-[#32344d]"
             >
             <GrainOverlay />
             <div className="mt-32 flex flex-col justify-start h-full max-w-2xl text-second-color">

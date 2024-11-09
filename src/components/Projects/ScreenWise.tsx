@@ -1,9 +1,19 @@
+import ProjectPageBuild from "../Core/ProjectPageBuild"
+import ProjectInfo from "../../utils/projectInfo"
+
 
 const ScreenWise = () => {
+
+  const projectIndex = ProjectInfo[0]
+
   return(
-    <div>
-      <h1>ScreenWise</h1>
-    </div>
+    <ProjectPageBuild 
+      projectImage={projectIndex.projectImg} 
+      projectAbout={projectIndex.about} 
+      projectDemo={projectIndex.demo}
+      projectName={projectIndex.title}
+      projectTech={projectIndex.technologies}
+    />
   )
 }
 

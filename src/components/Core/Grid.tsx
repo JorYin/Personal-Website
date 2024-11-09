@@ -4,7 +4,7 @@ interface GridProps {
 
 const Grid = ({ children } : GridProps) => {
   return(
-    <div className="mx-5 grid grid-cols-1 lg:grid-cols-3 gap-8 ">
+    <div className="mx-5 grid grid-cols-1 lg:grid-cols-3 gap-8 place-items-center">
       {children}
     </div>
   );

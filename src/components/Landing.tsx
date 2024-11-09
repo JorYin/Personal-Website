@@ -16,9 +16,11 @@ const LandingPage = () => {
       <MobileNav />
       <Nav />
       <Hero />
-      <About />
-      <Skills />
-      <Projects />
+      <div className="bg-primary rounded-2xl">
+        <About />
+        <Skills />
+        <Projects />
+      </div>
       <Contact />
       <Footer />
     </div>

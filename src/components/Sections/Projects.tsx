@@ -1,8 +1,7 @@
 import Grid from "../Core/Grid";
-import Card from "../Core/Card";
+import ProjectCard from "../Core/ProjectCard";
 import ProjectInfo from "../../utils/projectInfo"
 import GrainOverlay from "../../assets/SVG/Grain";
-import { Link } from "react-router-dom";
 
 
 const Projects = () => {
@@ -14,19 +13,9 @@ const Projects = () => {
         <div className="text-center mb-10 mx-5">
             <h1 className="font-League-Spartan text-5xl sm:text-9xl font-bold">PROJECTS</h1>
         </div>
-        <Link to="/ScreenWise"></Link>
         <Grid>
-          {ProjectInfo.map((Projects) => (
-          <div className="relative z-20">
-              <Card
-                projectImg={Projects.projectImg}
-                title={Projects.title}
-                about={Projects.about}
-                technologies={Projects.technologies}
-                github={Projects.github}
-                website={Projects.website}
-              />
-            </div>
+          {ProjectInfo.map((element) => (
+            <ProjectCard projectImg={element.projectImg} linkTo={element.link} projectName={element.title}/>
           ))}
         </Grid>
       </div>
