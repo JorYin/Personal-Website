@@ -38,7 +38,7 @@ const ProjectPageBuild = ({ projectImage, projectName, projectAbout, projectDemo
           <div className="text-center order-2 md:order-none">
             <h3 className="font-League-Spartan text-3xl font-bold">Technologies</h3>
             <p className="font-Libre-Baskerville">{projectTech.join(", ")}</p>
-            <button className="mt-10 py-3 px-4 bg-primary text-second-color rounded-lg font-Libre-Baskerville transition duration-500 hover:scale-105">
+            <button className="mt-5 py-3 px-4 bg-primary text-second-color rounded-lg font-Libre-Baskerville transition duration-500 hover:scale-105">
               <a href={projectDemo} target="_blank">View Demo!</a>
             </button>
           </div>
