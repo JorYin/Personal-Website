@@ -1,35 +1,24 @@
-import DesktopNavAnimation from "../Animations/DesktopNavAnimation";
-import HoverUnderlineAnimation from "../Animations/HoverUnderline";
-
 const Nav = () => {
   return(
-    <DesktopNavAnimation>
-      <div className="w-full py-4 hidden lg:block text-main-color relative overflow-hidden">
+      <div className="w-full py-4 text-main-color font-Karantina relative overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <nav className="flex justify-between items-center mx-5">
-            <div>
-              <h1 className="font-League-Spartan font-bold italic text-3xl">
-                Jordan.Y
+            <div className="flex items-center justify-center">
+              <h1 className="text-4xl md:text-5xl">
+                Jordan Yin
               </h1> 
             </div>
             <div>
-              <ul className="flex">
-                <li className="py-2 px-4">
-                  <a href="/#about" className="font-League-Spartan font-medium text-2xl group">
-                    ABOUT
-                    <HoverUnderlineAnimation />
+              <ul className="flex items-center justify-center">
+                <li>
+                  <a href="" className="text-3xl md:text-4xl hover:bg-accent duration-300 ease-in-out">
+                    Work
                   </a>
                 </li>
-                <li className="ml-4 py-2 px-4">
-                  <a href="/#projects" className="font-League-Spartan font-medium text-2xl group">
-                    PROJECTS
-                    <HoverUnderlineAnimation />
-                  </a>
-                </li>
-                <li className="ml-4 py-2 px-4">
-                  <a href="/#contact" className="font-League-Spartan font-medium text-2xl group">
-                    CONTACT
-                    <HoverUnderlineAnimation />
+                <li className="text-4xl mx-2">/</li>
+                <li>
+                  <a href="/about" className="text-3xl md:text-4xl hover:bg-accent duration-300 ease-in-out">
+                    About
                   </a>
                 </li>
               </ul>
@@ -37,7 +26,6 @@ const Nav = () => {
           </nav>
         </div>
       </div>
-    </DesktopNavAnimation>
   )
 }
 
