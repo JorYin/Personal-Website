@@ -21,6 +21,7 @@ export default {
         "second-color": "#edede9"
       },
       borderColor: {
+        "primary": "#2b2d42",
         "accent": "#fca311"
       }
     },

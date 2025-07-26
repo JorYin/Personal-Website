@@ -1,7 +1,7 @@
 const SkillsInfo = [
   {
     id: "0",
-    skillsArray: ["Java", "JavaScript", "Typescript", "HTML/CSS", "C#", "Python", "SQL", "React", "Next.js", "Node.js", "Express.js", "Bootstrap", "Tailwind CSS", "Git", "MongoDB", "Firebase", "Supabase", "Figma", "Unity"],
+    skillsArray: ["JavaScript", "TypeScript", "HTML/CSS", "C#", "Java", "Python", "SQL", "React", "Next.JS", "Node.JS", "Express.JS", ".NET", "Bootstrap", "Tailwind CSS", "Git", "Supabase", "MongoDB", "Firebase", "Azure"],
   },
 ];
 

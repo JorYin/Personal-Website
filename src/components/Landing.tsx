@@ -1,9 +1,9 @@
 import Nav from "../components/Navigation/Nav"
 import Hero from "../components/Sections/Hero"
+import Work from "../components/Sections/Work"
 import Skills from "../components/Sections/Skills"
 import Projects from "../components/Sections/Projects"
-import Contact from "../components/Sections/Contact"
-import Footer from "../components/Navigation/Footer"
+import Footer from "./Sections/Footer"
 import GrainOverlay from "../assets/SVG/Grain"
 
 const LandingPage = () => {
@@ -13,11 +13,9 @@ const LandingPage = () => {
     <div>
       <Nav />
       <Hero />
-      <div className="bg-primary rounded-2xl">
-        <Skills />
-        <Projects />
-      </div>
-      <Contact />
+      <Work />
+      <Skills />
+      <Projects />
       <Footer />
     </div>
   </div>

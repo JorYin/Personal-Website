@@ -1,23 +1,21 @@
 import Grid from "../Core/Grid";
 import ProjectCard from "../Core/ProjectCard";
 import ProjectInfo from "../../utils/projectInfo"
-import GrainOverlay from "../../assets/SVG/Grain";
 
 
 const Projects = () => {
   
   return(
-    <section id="projects" className="w-full py-40 text-second-color bg-primary rounded-b-2xl relative overflow-hidden">
-      <GrainOverlay />
+    <section id="projects" className="w-full py-40 rounded-b-2xl relative overflow-hidden">
       <div className="w-full max-w-7xl mx-auto">
         <div className="text-center mb-10 mx-5">
-            <h1 className="font-League-Spartan text-5xl sm:text-9xl font-bold">PROJECTS</h1>
+            <h1 className="font-Karantina text-5xl sm:text-9xl text-main-color">Projects</h1>
         </div>
-        <Grid>
+        {/* <Grid>
           {ProjectInfo.map((element) => (
             <ProjectCard projectImg={element.projectImg} linkTo={element.link} projectName={element.title}/>
           ))}
-        </Grid>
+        </Grid> */}
       </div>
   </section>
   )
