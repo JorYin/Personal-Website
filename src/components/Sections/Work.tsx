@@ -1,3 +1,4 @@
+import WorkInfo from "../../utils/WorkInfo";
 import WorkTimeLineEntry from "../Core/WorkTimeLineEntry";
 
 const Work = () => {
@@ -5,38 +6,31 @@ const Work = () => {
   return(
   <section id="about" className="w-full py-32 text-main-color rounded-t-2xl relative overflow-hidden">
     <div className="w-full max-w-7xl mx-auto flex flex-col justify-center items-center">
-              <div className="text-center mb-20 mx-5">
-          <h1 className="font-League-Spartan text-5xl sm:text-9xl font-bold">Work Experience</h1>
+      <div className="text-center mb-20 mx-5">
+          <h1 className="font-Karantina text-5xl sm:text-9xl">Work Experience</h1>
       </div>
 
-      <div>
+      <div className="w-full">
 
-      <div className="relative">
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-primary h-full"></div>
+        <div className="relative mx-5">
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-2 rounded-sm bg-primary h-full"></div>
+          {WorkInfo.map(workEntry => (
+            <WorkTimeLineEntry
+              key={workEntry.Id}
+              Id={workEntry.Id}
+              Icon={workEntry.Icon}
+              Company={workEntry.Company}
+              Role={workEntry.Role}
+              StartMonth={workEntry.StartMonth}
+              StartYear={workEntry.StartYear}
+              EndMonth={workEntry.EndMonth}
+              EndYear={workEntry.EndYear}
+              Description={workEntry.Description}
+              CurrentJob={workEntry.CurrentJob}
+            />
+          ))}
+        </div>
 
-        <div>
-          <WorkTimeLineEntry
-            Company="CarMax"
-            Role="Software Engineer Intern"
-            StartMonth="June"
-            StartYear="2025"
-            EndMonth="August"
-            EndYear="2025"
-            Description="SNS Team + SF Team"
-          />
-        </div>
-        <div>
-          <WorkTimeLineEntry
-            Company="CarMax"
-            Role="Software Engineer Intern"
-            StartMonth="June"
-            StartYear="2025"
-            EndMonth="August"
-            EndYear="2025"
-            Description="SNS Team + SF Team"
-          />
-        </div>
-      </div>
       </div>
     </div>
   </section>

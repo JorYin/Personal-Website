@@ -1,4 +1,4 @@
-import SkillsInfo from "../../utils/skillsInfo";
+import SkillsInfo from "../../utils/SkillsInfo";
 import SkillsCard from "../Core/SkillsCard";
 
 const Skills = () => {

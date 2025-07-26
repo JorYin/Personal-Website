@@ -1,6 +1,6 @@
 import Grid from "../Core/Grid";
 import ProjectCard from "../Core/ProjectCard";
-import ProjectInfo from "../../utils/projectInfo"
+import ProjectInfo from "../../utils/ProjectInfo"
 
 
 const Projects = () => {

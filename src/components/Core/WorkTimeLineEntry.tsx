@@ -1,41 +1,52 @@
-import { FaCar } from "react-icons/fa6"
+import { IconType } from "react-icons"
 
 interface WorkTimeLineEntryProps {
+  Id: number,
+  Icon: IconType
   Company: string,
   Role: string,
   StartMonth: string,
   StartYear: string,
   EndMonth: string,
-  EndYear: string
+  EndYear: string,
   Description: string,
+  CurrentJob:boolean
 }
 
 const WorkTimeLineEntry = (
-  {Company, Role, StartMonth, StartYear, EndMonth, EndYear, Description}:WorkTimeLineEntryProps
+  {Id, Icon, Company, Role, StartMonth, StartYear, EndMonth, EndYear, Description, CurrentJob}:WorkTimeLineEntryProps
 ) => {
   return (
-    <div  className="flex items-center w-full">
-      <div className="w-[50%] text-left pl-8">
-        <div className="flex">
-          <div className="bg-accent rounded-full h-10 w-10 flex items-center justify-center">
-            <FaCar className="text-main-color h-6 w-6" />
+    <div className={`flex ${Id % 2 == 0 ? "" : "flex-row-reverse"} items-center w-full`}>
+      
+      <div className={`flex flex-col justify-center ${Id % 2 == 0 ? "items-end" : "items-start"} w-5/12`}>
+        <div className={`my-12 w-full max-w-[300px]`}>
+          <div className="flex justify-start items-center gap-4">
+            <div className="hidden bg-accent rounded-full h-10 w-10 md:flex items-center justify-center">
+              <Icon className="text-main-color h-6 w-6" />
+            </div>
+            <h3 className="font-Karantina text-4xl md:text-7xl">{Company}</h3>          
           </div>
-          <h3 className="text-3xl">{Company}</h3>          
-        </div>
-                  <p className="text-2xl">{Role}, {StartMonth}, {StartYear} - {EndMonth}, {EndYear}</p>
-                <ul>
-        <li>{Description}</li>
-      </ul>
-      </div>
-            {/* Center Line and Circle */}
-      <div className="w-2/12 flex justify-center">
-        <div className="relative">
-          <div className="w-4 h-4 bg-blue-500 rounded-full border-4 border-white shadow-lg z-10 relative"></div>
+          
+          <div className="font-Kay-Pho-Du">
+            <p className="font-bold text-lg md:text-2xl">{Role}</p>
+            <p className="text-sm md:text-lg">{StartMonth}, {StartYear} - {EndMonth}, {EndYear}</p>
+          </div>
+          
+          <ul className="font-Kay-Pho-Du text-sm">
+            <li>{Description}</li>
+          </ul>
         </div>
       </div>
       
-      {/* Empty space on the other side */}
-      <div className="w-[50%]"></div>
+      <div className="w-2/12 flex justify-center">
+        <span className="relative flex size-4">
+          {CurrentJob && <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75"></span>}
+          <span className={`relative inline-flex size-4 rounded-full ${CurrentJob ? "bg-accent" : "bg-accent/75"}`}></span>
+        </span>
+      </div>
+      
+      <div className="w-5/12"></div>
     </div>
   )
 }
