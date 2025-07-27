@@ -6,11 +6,11 @@ import ProjectInfo from "./ProjectInfo";
 export const PageRoutes = [
   {
     path: "/",
-    element: <LandingPage />
+    element: <LandingPage/>
   },
   {
     path: "/about",
-    element: <About />
+    element: <About/>
   },
   ...ProjectInfo.map(project => ({
     path: project.link,
