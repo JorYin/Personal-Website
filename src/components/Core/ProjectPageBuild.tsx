@@ -26,19 +26,19 @@ const ProjectPageBuild = ({ projectImage, projectName, projectAbout, projectDemo
           className="flex justify-center items-center mx-5 my-5 transition duration-500 hover:-translate-y-2"
         >
           <FaArrowLeft />
-          <p className="mx-2 font-Libre-Baskerville">Go Back!</p>
+          <p className="mx-2 font-Kay-Pho-Du">Go Back!</p>
         </button>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-5 justify-center items-center">
           <div className="order-1 md:order-none">
-            <h1 className="font-League-Spartan text-5xl font-bold">{projectName}</h1>
-            <p className="mt-4 font-Libre-Baskerville">{projectAbout}</p>
+            <h1 className="font-Karantina text-5xl">{projectName}</h1>
+            <p className="mt-4 font-Kay-Pho-Du">{projectAbout}</p>
           </div>
 
           <div className="text-center order-2 md:order-none">
-            <h3 className="font-League-Spartan text-3xl font-bold">Technologies</h3>
-            <p className="font-Libre-Baskerville">{projectTech.join(", ")}</p>
-            <button className="mt-5 py-3 px-4 bg-primary text-second-color rounded-lg font-Libre-Baskerville transition duration-500 hover:scale-105">
+            <h3 className="font-Karantina text-3xl font-bold">Technologies</h3>
+            <p className="font-Kay-Pho-Du">{projectTech.join(", ")}</p>
+            <button className="mt-5 py-3 px-4 bg-primary text-second-color rounded-lg font-Kay-Pho-Du transition duration-500 hover:scale-105">
               <a href={projectDemo} target="_blank">View Demo!</a>
             </button>
           </div>

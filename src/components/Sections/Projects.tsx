@@ -11,11 +11,11 @@ const Projects = () => {
         <div className="text-center mb-10 mx-5">
             <h1 className="font-Karantina text-5xl sm:text-9xl text-main-color">Projects</h1>
         </div>
-        {/* <Grid>
+        <Grid>
           {ProjectInfo.map((element) => (
             <ProjectCard projectImg={element.projectImg} linkTo={element.link} projectName={element.title}/>
           ))}
-        </Grid> */}
+        </Grid>
       </div>
   </section>
   )

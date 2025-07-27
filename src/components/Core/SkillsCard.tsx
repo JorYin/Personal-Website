@@ -1,4 +1,3 @@
-
 interface SkillsCard{
   skillName: String[],
 }
