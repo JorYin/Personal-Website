@@ -1,6 +1,6 @@
-import Me from "../../assets/me.webp"
-import Footer from "./Footer";
-import Nav from "../Navigation/Nav";
+import Me from "../assets/me.webp"
+import Footer from "../components/Sections/Footer";
+import Nav from "../components/Navigation/Nav";
 
 const About = () => {
   

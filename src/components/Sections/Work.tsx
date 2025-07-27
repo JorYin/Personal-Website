@@ -1,5 +1,6 @@
 import WorkInfo from "../../utils/WorkInfo";
 import WorkTimeLineEntry from "../Core/WorkTimeLineEntry";
+import SectionHeading from "../Core/SectionHeading";
 
 const Work = () => {
   
@@ -7,7 +8,7 @@ const Work = () => {
   <section id="about" className="w-full py-32 text-main-color rounded-t-2xl relative overflow-hidden">
     <div className="w-full max-w-7xl mx-auto flex flex-col justify-center items-center">
       <div className="text-center mb-20 mx-5">
-          <h1 className="font-Karantina text-5xl sm:text-9xl">Work Experience</h1>
+          <SectionHeading text="Work Experience" />
       </div>
 
       <div className="w-full">

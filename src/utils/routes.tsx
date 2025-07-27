@@ -1,5 +1,5 @@
 import LandingPage from "../components/Landing";
-import About from "../components/Sections/About";
+import About from "../pages/About";
 import ProjectPageBuild from "../components/Core/ProjectPageBuild";
 import ProjectInfo from "./ProjectInfo";
 

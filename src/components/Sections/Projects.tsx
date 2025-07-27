@@ -1,6 +1,7 @@
 import Grid from "../Core/Grid";
 import ProjectCard from "../Core/ProjectCard";
 import ProjectInfo from "../../utils/ProjectInfo"
+import SectionHeading from "../Core/SectionHeading";
 
 
 const Projects = () => {
@@ -9,7 +10,7 @@ const Projects = () => {
     <section id="projects" className="w-full py-40 rounded-b-2xl relative overflow-hidden">
       <div className="w-full max-w-7xl mx-auto">
         <div className="text-center mb-10 mx-5">
-            <h1 className="font-Karantina text-5xl sm:text-9xl text-main-color">Projects</h1>
+            <SectionHeading text="Projects" />
         </div>
         <Grid>
           {ProjectInfo.map((element) => (
