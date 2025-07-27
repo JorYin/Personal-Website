@@ -7,8 +7,8 @@ const About = () => {
   
   return(
     <div className="bg-main relative overflow-hidden">
+      <GrainOverlay />
       <Nav/>
-        <GrainOverlay/>
         <section id="about" className="w-full py-32 text-main-color rounded-t-2xl">
           <div className="w-full max-w-7xl mx-auto">
             <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 mx-5 justify-center items-center">

@@ -15,11 +15,7 @@ const ProjectPageBuild = ({ projectImage, projectName, projectAbout, projectDemo
 
   return (
     <div className="relative min-h-screen bg-main text-main-color overflow-hidden">
-
-      <div className="absolute inset-0">
-        <GrainOverlay />
-      </div>
-
+      <GrainOverlay />
       <div className="relative z-10 w-full max-w-7xl mx-auto py-16">
         <div className="mx-5">
           <button
