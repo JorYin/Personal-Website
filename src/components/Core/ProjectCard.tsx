@@ -12,7 +12,7 @@ const ProjectCard = ({ projectImg, linkTo, projectName }: CardProps) => {
       <Link to={linkTo} className="block text-center">
         <div className="relative">
           <img
-            className="rounded-lg w-full h-auto mb-4"
+            className="rounded-lg w-full h-auto mb-4 shadow-[5px_5px_0px_0px_#2b2d42]"
             src={projectImg}
             alt={projectName}
           />

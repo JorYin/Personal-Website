@@ -48,7 +48,7 @@ const ProjectPageBuild = ({ projectImage, projectName, projectAbout, projectDemo
           <div className="flex items-center justify-center my-5">
             <img
               src={projectImage}
-              className="w-full max-w-3xl rounded-3xl shadow-lg"
+              className="w-full max-w-3xl rounded-3xl shadow-[5px_5px_0px_0px_#2b2d42]"
               alt={projectName}
             />
           </div>
