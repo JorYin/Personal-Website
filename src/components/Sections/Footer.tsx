@@ -1,9 +1,11 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import GrainOverlay from "../../assets/SVG/Grain";
 
 const Footer = () => {
   
   return(
       <section id="contact" className="w-full bg-primary text-second-color relative overflow-hidden">
+        <GrainOverlay/>
         <div className="max-w-7xl mx-auto flex flex-col justify-center items-center">
           <div className="mx-5">
             <div className="font-Karantina py-24 text-7xl md:text-[150px] lg:text-[250px]">

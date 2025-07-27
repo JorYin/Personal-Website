@@ -1,13 +1,15 @@
 import Me from "../assets/me.webp"
 import Footer from "../components/Sections/Footer";
 import Nav from "../components/Navigation/Nav";
+import GrainOverlay from "../assets/SVG/Grain";
 
 const About = () => {
   
   return(
-    <>
+    <div className="relative overflow-hidden">
       <Nav/>
-        <section id="about" className="w-full py-32 text-main-color rounded-t-2xl relative overflow-hidden">
+        <GrainOverlay/>
+        <section id="about" className="w-full py-32 text-main-color rounded-t-2xl">
           <div className="w-full max-w-7xl mx-auto">
             <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 mx-5 justify-center items-center">
               <div className="text-left p-4 order-2 md:order-none">
@@ -32,7 +34,7 @@ const About = () => {
           </div>
         </section>
       <Footer/>
-    </>
+    </div>
   )
 }
 
