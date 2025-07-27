@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import GrainOverlay from "../../assets/SVG/Grain";
 
 interface CardProps {
   projectImg: string;

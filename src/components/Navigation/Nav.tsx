@@ -4,14 +4,14 @@ const Nav = () => {
         <div className="max-w-7xl mx-auto">
           <nav className="flex justify-between items-center mx-5">
             <div className="flex items-center justify-center">
-              <h1 className="text-4xl md:text-5xl">
+              <a href="/" className="font-Karantina text-4xl md:text-5xl">
                 Jordan Yin
-              </h1> 
+              </a>
             </div>
             <div>
               <ul className="flex items-center justify-center">
                 <li>
-                  <a href="" className="text-3xl md:text-4xl hover:bg-accent duration-300 ease-in-out">
+                  <a href="/" className="text-3xl md:text-4xl hover:bg-accent duration-300 ease-in-out">
                     Work
                   </a>
                 </li>
@@ -30,4 +30,3 @@ const Nav = () => {
 }
 
 export default Nav;
-

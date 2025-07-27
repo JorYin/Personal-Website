@@ -1,11 +1,16 @@
 import LandingPage from "../components/Landing";
+import About from "../components/Sections/About";
 import ProjectPageBuild from "../components/Core/ProjectPageBuild";
 import ProjectInfo from "./ProjectInfo";
 
 export const PageRoutes = [
   {
     path: "/",
-    element: <LandingPage />,
+    element: <LandingPage />
+  },
+  {
+    path: "/about",
+    element: <About />
   },
   ...ProjectInfo.map(project => ({
     path: project.link,
