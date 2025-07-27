@@ -1,44 +1,24 @@
-import WildwoodWatchImg from "../assets/ProjectImg/WildwoodWatch.webp"
-import ScreenWiseImg from "../assets/ProjectImg/ScreenWise.png"
-import iHealthImg from "../assets/ProjectImg/iHealthAi.webp"
-import GameOfLifeImg from "../assets/ProjectImg/GameOfLife.webp"
+import Hendricks from "../assets/ProjectImg/Hendricks.webp"
+import SparkBytes from "../assets/ProjectImg/SparkBytes.webp"
 
 const ProjectInfo = [
   {
-    id: "0",
-    projectImg: ScreenWiseImg,
-    title: "ScreenWise",
-    about: "I created ScreenWise with one goal in mind, which is to reduce phone usage! The reason is that sometimes I am on my phone too much, and the trackers are only sometimes 100% right. With ScreenWise, you can input the number of hours you have used your phone, add your friends, and even compete with your friends on a leaderboard! However, having the highest screen time is not a flex for this leaderboard; if you see your friend at the top, give them a little nudge and tell them to get off their phone :)",
-    technologies: ["React", "Express", "Node", "MongoDB"],
-    demo: "https://github.com/JorYin/ScreenWise",
-    link: "/ScreenWise"
+    id: 0,
+    projectImg: Hendricks,
+    title: "Hendricks Foundation",
+    about: "During my time leading a team of 2 SWEs and working alongside a PM, we built a web app to help the Hendricks Foundation better showcase its impact. The foundation wanted donors, volunteers, and students to see the difference they were making, so we developed a real-time e-waste calculator, interactive dashboards, and a badge system to keep users engaged. We also implemented account creation with 2FA and OCR tech to verify donated devices, creating a secure and seamless experience!",
+    technologies: ["React", "TypeScript", "Node.JS", "Express.JS", "Supabase"],
+    demo: "https://github.com/Hack4Impact-BU/Hendricks-Ecalc",
+    link: "/hendricks-foundation"
   },
   {
-    id: "1",
-    projectImg: iHealthImg,
-    title: "iHealth.AI",
-    about: "92% of Americans don’t undergo routine health screenings. In fact, missed preventative opportunities cost US healthcare 55 billion dollars every year. We wanted to create a proactive solution that uses the data we already generate through devices like iPhones and Apple Watches. Our goal was to provide people with daily insights into their health, helping them make informed decisions about whether to visit a doctor or change their habits before more serious issues arise.",
-    technologies: ["React", "Typescript", "Flask", "MongoDB"],
-    demo: "https://devpost.com/software/ihealth-ai",
-    link: "/IHealthAI"
-  },
-  {
-    id: "2",
-    projectImg: WildwoodWatchImg,
-    title: "WildwoodWatch",
-    about: "WildWoodWatch is an advocacy website that informs people about wildlife and deforestation. It was one of the first projects I ever made, and it was in HTML, CSS, and Javascript! I learned a lot of valuable skills while creating this project, like using Figma for the first time, the importance of responsive design, and the basics of Javascript, which I built upon even today. It is a project worth checking out to see how far I have come in my coding journey!",
-    technologies: ["HTML", "CSS", "Javascript"],
-    demo: "https://joryin.github.io/WildwoodWatch/",
-    link: "/WildwoodWatch"
-  },
-  {
-    id: "3",
-    projectImg: GameOfLifeImg,
-    title: "Game Of Life",
-    about: "We took inspiration from The Game Of Life. This board game has players navigate through life, make decisions, earn money, and ultimately try to gain the most wealth by the end of the game. Wealth is measured in a variety of ways which affects your overall final score. We wanted a way to gamify learning financial literacy. There are some existing resources online but these sites can be a task to navigate, difficult to find, and hard to understand so the goal was to gamify learning to make it fun and motivating.",
-    technologies: ["React", "Typescript", "Tailwind Css"],
-    demo: "https://gameof-life-9dec.vercel.app/",
-    link: "/GameOfLife"
+    id: 1,
+    projectImg: SparkBytes,
+    title: "Spark!Bytes",
+    about: "Spark!Bytes was a project idea pitched to us in CS391, and my team and I ran with it to create something meaningful. We built a web app that helps BU organizations share leftover food from campus events with students who need it. Our vision included features like liking events, viewing them on a map, filtering by location or time, and making it easy for students to quickly find what is nearby. I had a lot of fun designing the app and being a leader in the development!",
+    technologies: ["Next.JS", "TypeScript", "Supabase"],
+    demo: "https://github.com/JustinCWang/BUCS391S1-Team-Ditto-SparkBytes",
+    link: "/spark-bytes"
   },
 ];
 

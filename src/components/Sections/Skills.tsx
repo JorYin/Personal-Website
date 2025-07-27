@@ -1,21 +1,21 @@
-import GrainOverlay from "../../assets/SVG/Grain";
-import SkillsInfo from "../../utils/skillsInfo";
+import SkillsInfo from "../../utils/SkillsInfo";
 import SkillsCard from "../Core/SkillsCard";
-
+import SectionHeading from "../Core/SectionHeading";
 
 const Skills = () => {
   
   return(
-    <section id="skills" className="w-full py-40 text-second-color bg-primary relative overflow-hidden">
-      <GrainOverlay />
+    <section id="skills" className="w-full py-40 relative overflow-hidden">
       <div className="w-full max-w-7xl mx-auto">
-        <div className="text-center mb-10 mx-5">
-            <h1 className="font-League-Spartan text-5xl sm:text-9xl font-bold">SKILLS</h1>
-        </div>
-        <div className="mx-5 flex flex-wrap gap-4 items-center text-center">
-          {SkillsInfo.map(element => (
-            <SkillsCard skillName={element.skillsArray}/>
-          ))}
+        <div className="mx-5">
+          <div className="text-center mb-10">
+              <SectionHeading text="Skills" />
+          </div>
+          <div className="flex flex-wrap gap-4 items-center text-center">
+            {SkillsInfo.map(skill => (
+              <SkillsCard skillName={skill.skillsArray}/>
+            ))}
+          </div>
         </div>
       </div>
   </section>

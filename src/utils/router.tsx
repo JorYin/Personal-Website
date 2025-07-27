@@ -3,11 +3,11 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
-import { ROUTES } from "../utils/routes";
+import { PageRoutes } from "./Routes";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
-    ROUTES.map((route) => (
+    PageRoutes.map((route) => (
       <Route key={route.path} path={route.path} element={route.element} />
     ))
   )

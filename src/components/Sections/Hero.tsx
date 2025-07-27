@@ -1,16 +1,17 @@
-import TextMotionAnimation from "../Animations/TextMotionAnimation";
-
-
 const Hero = () => {
   
   return(
-      <section id="hero" className="w-full py-[12rem] md:py-[10rem] flex justify-center items-center text-main-color relative overflow-hidden">
+      <section id="hero" className="w-full py-[6rem] md:py-[12rem] text-main-color font-Kay-Pho-Du relative overflow-hidden">
         <div className="max-w-7xl mx-auto mb-40">
-          <TextMotionAnimation ClassName="text-center mx-5">
-            <h1 className="text-6xl md:text-9xl lg:text-[150px] font-Libre-Baskerville font-bold">Hey I'm</h1>
-            <h1 className="text-6xl md:text-9xl lg:text-[150px] font-Libre-Baskerville italic">Jordan!</h1>
-            <p className="text-xl md:text-xl lg:text-xl font-Libre-Baskerville italic"> A third year student studying CS @ Boston University</p>
-          </TextMotionAnimation>
+          <div className="mx-5">
+            <div className="mb-6">
+              <h1 className="text-5xl md:text-9xl lg:text-[150px]">Jordan Yin</h1>
+              <p className="text-lg md:text-3xl">Third Year CS Student At Boston University</p>
+            </div>
+            <div className="max-w-[19rem] md:max-w-[30rem] text-center px-4 py-2 rounded-[20px] border-solid border-accent border-[3px] bg-accent/50">
+              <p className="text-lg md:text-3xl">Recent SWE Intern @ CarMax</p>
+            </div>
+          </div>
         </div>
       </section>
   )

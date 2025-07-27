@@ -1,28 +1,27 @@
-import ScreenWise from "../components/Projects/ScreenWise";
-import WildwoodWatch from "../components/Projects/WildwoodWatch";
-import IHealthAI from "../components/Projects/HealthAI";
-import GameOfLife from "../components/Projects/GameOfLife";
-import LandingPage from "../components/Landing";
+import LandingPage from "../pages/Landing";
+import About from "../pages/About";
+import ProjectPageBuild from "../components/Core/ProjectPageBuild";
+import ProjectInfo from "./ProjectInfo";
 
-export const ROUTES = [
+export const PageRoutes = [
   {
     path: "/",
-    element: <LandingPage />,
+    element: <LandingPage />
   },
   {
-    path: "/ScreenWise",
-    element: <ScreenWise />,
+    path: "/about",
+    element: <About />
   },
-  {
-    path: "/WildwoodWatch",
-    element: <WildwoodWatch />,
-  },
-  {
-    path: "/IHealthAI",
-    element: <IHealthAI />,
-  },
-  {
-    path: "/GameOfLife",
-    element: <GameOfLife />,
-  },
+  ...ProjectInfo.map(project => ({
+    path: project.link,
+    element: (
+      <ProjectPageBuild
+        projectImage={project.projectImg}
+        projectName={project.title}
+        projectAbout={project.about}
+        projectDemo={project.demo}
+        projectTech={project.technologies}
+      />
+    ),
+  })),
 ];

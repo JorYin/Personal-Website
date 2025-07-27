@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "League-Spartan": ["League Spartan", "sans-serif"],
-        "Libre-Baskerville": ["Libre Baskerville", "serif"]
+        "Karantina": ["Karantina", "sans-serif"],
+        "Kay-Pho-Du": ["Kay Pho Du", "serif"]
       },
       backgroundColor: {
         "main": "#edede9",
@@ -19,8 +19,11 @@ export default {
       textColor: {
         "main-color": "#2b2d42",
         "second-color": "#edede9"
+      },
+      borderColor: {
+        "primary": "#2b2d42",
+        "accent": "#fca311"
       }
-
     },
   },
   plugins: [],
