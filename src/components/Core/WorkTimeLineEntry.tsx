@@ -1,4 +1,5 @@
 import { IconType } from "react-icons"
+import { FadeInLeftOrRight } from "../Animations/FadeInLeftOrRight"
 
 interface WorkTimeLineEntryProps {
   Id: number,
@@ -17,7 +18,7 @@ const WorkTimeLineEntry = (
   {Id, Icon, Company, Role, StartMonth, StartYear, EndMonth, EndYear, Description, CurrentJob}:WorkTimeLineEntryProps
 ) => {
   return (
-    <div className={`flex ${Id % 2 == 0 ? "" : "flex-row-reverse"} items-center w-full`}>
+    <FadeInLeftOrRight Id={Id} className={`flex ${Id % 2 == 0 ? "" : "flex-row-reverse"} items-center w-full`}>
       <div className={`flex flex-col justify-center ${Id % 2 == 0 ? "items-end" : "items-start"} w-5/12`}>
         <div className={`my-24 w-full max-w-[300px]`}>
           <div className="flex justify-start items-center gap-4">
@@ -42,7 +43,7 @@ const WorkTimeLineEntry = (
         </span>
       </div>
       <div className="w-5/12"></div>
-    </div>
+    </FadeInLeftOrRight>
   )
 }
 
