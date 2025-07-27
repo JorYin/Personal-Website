@@ -10,9 +10,7 @@ const Work = () => {
       <div className="text-center mb-20 mx-5">
           <SectionHeading text="Work Experience" />
       </div>
-
       <div className="w-full">
-
         <div className="relative mx-5">
           <div className="absolute left-1/2 transform -translate-x-1/2 w-2 rounded-sm bg-primary h-full"></div>
           {WorkInfo.map(workEntry => (
@@ -31,7 +29,6 @@ const Work = () => {
             />
           ))}
         </div>
-
       </div>
     </div>
   </section>

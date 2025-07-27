@@ -9,9 +9,9 @@ const Footer = () => {
             <div className="font-Karantina py-24 text-7xl md:text-[150px] lg:text-[250px]">
               <a href="mailto:jordan.yin04@gmail.com"> Let's Connect!</a>
             </div>
-            <div className="flex flex-col w-full justify-center md:justify-between items-center mb-12 gap-4">
-              <div className="flex items-center justify-center">
-                <p className="font-Kay-Pho-Du">Last updated: July, 2025</p>
+            <div className="w-full flex flex-col justify-center md:justify-between items-center mb-12 gap-4">
+              <div className="flex items-center justify-center font-Kay-Pho-Du text-lg">
+                <p>Last updated: July, 2025</p>
               </div>
               <div className="flex items-center justify-center gap-4">
                 <div className="bg-accent rounded-full h-10 w-10 flex items-center justify-center">

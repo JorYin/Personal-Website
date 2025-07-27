@@ -7,7 +7,7 @@ const SkillsCard = ({skillName} : SkillsCard) => {
     <> 
       {skillName.map(skillElement => (
         <div className="bg-primary text-center py-2 px-4 rounded">
-          <p className="text-second-color font-Kay-Pho-Du text-xl sm:text-2xl">{skillElement}</p>
+          <p className="text-second-color font-Kay-Pho-Du text-lg md:text-3xl">{skillElement}</p>
         </div>
       ))}
     </>
