@@ -6,7 +6,7 @@ import GrainOverlay from "../assets/SVG/Grain";
 const About = () => {
   
   return(
-    <div className="relative overflow-hidden">
+    <div className="bg-main relative overflow-hidden">
       <Nav/>
         <GrainOverlay/>
         <section id="about" className="w-full py-32 text-main-color rounded-t-2xl">

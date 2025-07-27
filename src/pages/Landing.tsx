@@ -8,7 +8,7 @@ import GrainOverlay from "../assets/SVG/Grain"
 
 const LandingPage = () => {
   return(
-    <div className=" relative overflow-hidden">
+    <div className="bg-main relative overflow-hidden">
       <GrainOverlay />
       <Nav />
       <Hero />
