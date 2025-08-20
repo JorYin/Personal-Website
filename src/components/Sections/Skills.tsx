@@ -4,7 +4,7 @@ import SectionHeading from "../Core/SectionHeading";
 
 const Skills = () => {
   return(
-    <section id="skills" className="w-full py-40 relative overflow-hidden">
+    <section id="skills" className="w-full py-40">
       <div className="w-full max-w-7xl mx-auto">
         <div className="mx-5">
           <div className="text-center mb-10">

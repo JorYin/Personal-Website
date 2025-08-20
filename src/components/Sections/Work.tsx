@@ -5,7 +5,7 @@ import SectionHeading from "../Core/SectionHeading";
 const Work = () => {
   
   return(
-  <section id="about" className="w-full py-32 text-main-color rounded-t-2xl relative overflow-hidden">
+  <section id="about" className="w-full py-32 text-main-color rounded-t-2xl">
     <div className="w-full max-w-7xl mx-auto flex flex-col justify-center items-center">
       <div className="text-center mb-20 mx-5">
           <SectionHeading text="Work Experience" />

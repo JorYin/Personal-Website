@@ -1,13 +1,11 @@
 import Me from "../assets/me.webp"
 import Footer from "../components/Sections/Footer";
 import Nav from "../components/Navigation/Nav";
-import GrainOverlay from "../assets/SVG/Grain";
 
 const About = () => {
   
   return(
-    <div className="bg-main relative overflow-hidden">
-      <GrainOverlay />
+    <div className="bg-main">
       <Nav/>
         <section id="about" className="w-full py-32 text-main-color rounded-t-2xl">
           <div className="w-full max-w-7xl mx-auto">

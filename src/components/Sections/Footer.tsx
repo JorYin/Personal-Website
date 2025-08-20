@@ -1,13 +1,9 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
-import GrainOverlay from "../../assets/SVG/Grain";
 
 const Footer = () => {
   
   return(
     <section id="contact" className="w-full bg-primary text-second-color">
-      <div className="relative z-[2]">
-        <GrainOverlay/>
-      </div>
       <div className="max-w-7xl mx-auto flex flex-col justify-center items-center">
         <div className="mx-5">
           <div className="font-Karantina py-24 text-7xl md:text-[150px] lg:text-[250px]">
@@ -18,12 +14,12 @@ const Footer = () => {
               <p>Last updated: July, 2025</p>
             </div>
             <div className="flex items-center justify-center gap-4">
-              <div className="bg-accent rounded-full h-10 w-10 flex items-center justify-center">
+              <div className="bg-accent rounded-lg h-10 w-10 flex items-center justify-center">
                 <a href="https://github.com/JorYin" target="_blank">
                   <FaGithub className="text-main-color h-6 w-6"/>
                 </a>
               </div>
-              <div className="bg-accent rounded-full h-10 w-10 flex items-center justify-center">
+              <div className="bg-accent rounded-lg h-10 w-10 flex items-center justify-center">
                 <a href="https://www.linkedin.com/in/j0rdanyin/" target="_blank">
                   <FaLinkedin className="text-main-color h-6 w-6"/>
                 </a>

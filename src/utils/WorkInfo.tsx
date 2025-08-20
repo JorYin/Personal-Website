@@ -10,7 +10,7 @@ const WorkInfo = [
     StartYear: "2025",
     EndMonth: "August",
     EndYear: "2025",
-    Description: "",
+    Description: "Spent a summer in Dallas building APIs and tools that made it easier (and faster) for engineers and stakeholders to access vehicle generation data.",
     CurrentJob: true,  
   },
   {
@@ -22,7 +22,7 @@ const WorkInfo = [
     StartYear: "2025",
     EndMonth: "May",
     EndYear: "2025",
-    Description: "",
+    Description: "Led a small dev team, designing and shipping a full-stack app for a nonprofit while keeping everything secure and on budget.",
     CurrentJob: false,  
   },
   {
@@ -34,7 +34,7 @@ const WorkInfo = [
     StartYear: "2024",
     EndMonth: "August",
     EndYear: "2024",
-    Description: "",
+    Description: "Helped redesign and migrate the org’s site, cutting hosting costs to zero and making it easier for first-gen, low-income students to find support.",
     CurrentJob: false,  
   },
 ];

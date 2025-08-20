@@ -22,7 +22,7 @@ const WorkTimeLineEntry = (
       <div className={`flex flex-col justify-center ${Id % 2 == 0 ? "items-end" : "items-start"} w-5/12`}>
         <div className={`my-24 w-full max-w-[300px]`}>
           <div className="flex justify-start items-center gap-4">
-            <div className="hidden bg-accent rounded-full h-10 w-10 md:flex items-center justify-center">
+            <div className="hidden bg-accent rounded-lg h-12 w-12 md:flex items-center justify-center">
               <Icon className="text-main-color h-6 w-6" />
             </div>
             <h3 className="font-Karantina text-4xl md:text-7xl">{Company}</h3>          
@@ -31,7 +31,7 @@ const WorkTimeLineEntry = (
             <p className="font-bold text-lg md:text-3xl">{Role}</p>
             <p className="text-sm md:text-lg">{StartMonth}, {StartYear} - {EndMonth}, {EndYear}</p>
           </div>
-          <ul className="font-Kay-Pho-Du text-sm">
+          <ul className="font-Kay-Pho-Du text-sm list-disc ml-4 mt-4">
             <li>{Description}</li>
           </ul>
         </div>
@@ -42,7 +42,9 @@ const WorkTimeLineEntry = (
           <span className={`relative inline-flex size-4 rounded-full ${CurrentJob ? "bg-accent" : "bg-accent/75"}`}></span>
         </span>
       </div>
-      <div className="w-5/12"></div>
+      <div className="w-5/12">
+        
+      </div>
     </FadeInLeftOrRight>
   )
 }

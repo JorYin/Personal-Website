@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import GrainOverlay from "../../assets/SVG/Grain";
 import { FaArrowLeft } from "react-icons/fa6";
 
 interface ProjectPageBuild {
@@ -14,8 +13,7 @@ const ProjectPageBuild = ({ projectImage, projectName, projectAbout, projectDemo
   const navigate = useNavigate();
 
   return (
-    <div className="relative min-h-screen bg-main text-main-color overflow-hidden">
-      <GrainOverlay />
+    <div className="min-h-screen bg-main text-main-color">
       <div className="relative z-10 w-full max-w-7xl mx-auto py-16">
         <div className="mx-5">
           <button
